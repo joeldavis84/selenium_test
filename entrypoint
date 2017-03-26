@@ -1,0 +1,9 @@
+#!/bin/bash
+
+Xvfb :1 -ac -screen 0 800x600x24 &
+
+while [[ 1 ]]; do
+
+  sleep 50
+
+done
