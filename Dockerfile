@@ -13,4 +13,4 @@ COPY sample-test.py /opt/selenium_test/sample-test.py
 
 COPY entrypoint /entrypoint
 RUN chmod 0700 /entrypoint
-CMD ['/entrypoint']
+CMD ["/entrypoint"]
