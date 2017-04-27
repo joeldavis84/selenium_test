@@ -1,9 +1,12 @@
 #!/bin/bash
 
-Xvfb :1 -ac -screen 0 800x600x24 &
+export DISPLAY=":0"
 
+Xvfb ${DISPLAY} -ac -screen 0 800x600x24 >/tmp/Xvfb.log 2>&1 &
+
+  ## Infinite cycle allows any of the above to exit/restart without killing the container
 while [[ 1 ]]; do
 
-  sleep 50
+  sleep 500
 
 done
