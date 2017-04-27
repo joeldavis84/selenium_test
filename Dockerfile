@@ -4,8 +4,7 @@ FROM centos:6
 COPY geckodriver /usr/sbin/geckodriver
 
 RUN yum update -y
-RUN yum install -y wget lsof epel-release xorg-x11-server-Xvfb firefox
-RUN yum install -y python-pip
+RUN yum install -y wget lsof epel-release xorg-x11-server-Xvfb firefox python-pip
 RUN pip install selenium
 
 RUN mkdir -p /opt/selenium_test
