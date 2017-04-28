@@ -1,0 +1,1 @@
+This is just the bare bones infrastructure for running python-driven Selenium testing using Firefox and Xvfb. The intended use is for Jenkins projects where pushing to "preview" or "test" triggers selenium testing without blocking pipeline progression.
