@@ -1,4 +1,3 @@
-  # CentOS 7 has a weird error where firefox will segfault but other x11 apps work fine. Likely dbus related but I don't care to look into for now.
 FROM centos:7
 
 
